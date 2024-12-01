@@ -14,7 +14,7 @@ app.use((0, cors_1.default)());
 app.use('/api/v1/bikes', bike_route_1.BikeRoutes);
 const getAController = (req, res) => {
     const a = 10;
-    res.send(a);
+    res.json({ value: a });
 };
 app.get('/', getAController);
 exports.default = app;

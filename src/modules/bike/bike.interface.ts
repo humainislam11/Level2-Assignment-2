@@ -1,5 +1,5 @@
  
-export type Bike = {
+export interface Bike extends Document{
     id: string;
     name: string;
     brand: string;
